@@ -1050,13 +1050,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Generate a sanitized SRE / Infrastructure portfolio case study"
     )
     parser.add_argument(
-        "--node-cores",
+        "--node-cores", "--cores",
+        dest="node_cores",
         type=int,
         default=64,
         help="Target physical cores per host node (default: 64)"
     )
     parser.add_argument(
-        "--node-ram",
+        "--node-ram", "--ram",
+        dest="node_ram",
         type=int,
         default=512,
         help="Target physical RAM in GB per host node (default: 512)"
