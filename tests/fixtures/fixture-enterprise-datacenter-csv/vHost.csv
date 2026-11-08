@@ -1,0 +1,9 @@
+Host,Cluster,Num CPU,Cores per CPU,Memory Size,ESXi Version
+mock-esxi-01.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-02.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-03.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-04.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-05.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-06.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-07.synthetic.local,Cluster-Production,2,16,262144,7.0.3
+mock-esxi-08.synthetic.local,Cluster-Production,2,16,262144,7.0.3

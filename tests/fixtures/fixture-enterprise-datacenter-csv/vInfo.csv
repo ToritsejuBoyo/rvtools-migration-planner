@@ -1,0 +1,101 @@
+VM,Powerstate,CPUs,Memory,Provisioned MiB,In Use MiB,OS according to the VM spec,Host,Cluster,Datacenter,Primary IP Address
+mock-vm-app-001,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.2
+mock-vm-app-002,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.3
+mock-vm-app-003,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.4
+mock-vm-app-004,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.5
+mock-vm-app-005,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.6
+mock-vm-app-006,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.7
+mock-vm-app-007,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.8
+mock-vm-app-008,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.9
+mock-vm-app-009,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.10
+mock-vm-app-010,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.11
+mock-vm-app-011,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.12
+mock-vm-app-012,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.13
+mock-vm-app-013,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.14
+mock-vm-app-014,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.15
+mock-vm-app-015,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.16
+mock-vm-app-016,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.17
+mock-vm-app-017,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.18
+mock-vm-app-018,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2003 (32-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.19
+mock-vm-app-019,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.20
+mock-vm-app-020,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.21
+mock-vm-app-021,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.22
+mock-vm-app-022,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.23
+mock-vm-app-023,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.24
+mock-vm-app-024,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.25
+mock-vm-app-025,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.26
+mock-vm-app-026,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.27
+mock-vm-app-027,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.28
+mock-vm-app-028,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.29
+mock-vm-app-029,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.30
+mock-vm-app-030,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.31
+mock-vm-app-031,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.32
+mock-vm-app-032,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.33
+mock-vm-app-033,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.34
+mock-vm-app-034,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.35
+mock-vm-app-035,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.36
+mock-vm-app-036,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.37
+mock-vm-app-037,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.38
+mock-vm-app-038,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.39
+mock-vm-app-039,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.40
+mock-vm-app-040,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.41
+mock-vm-app-041,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.42
+mock-vm-app-042,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.43
+mock-vm-app-043,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.44
+mock-vm-app-044,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.45
+mock-vm-app-045,poweredOn,2,8192,51200,25600,CentOS 5.8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.46
+mock-vm-app-046,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.47
+mock-vm-app-047,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.48
+mock-vm-app-048,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.49
+mock-vm-app-049,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.50
+mock-vm-app-050,poweredOn,48,196608,1048576,524288,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.51
+mock-vm-app-051,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.52
+mock-vm-app-052,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.53
+mock-vm-app-053,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.54
+mock-vm-app-054,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.55
+mock-vm-app-055,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.56
+mock-vm-app-056,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.57
+mock-vm-app-057,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.58
+mock-vm-app-058,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.59
+mock-vm-app-059,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.60
+mock-vm-app-060,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.61
+mock-vm-app-061,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.62
+mock-vm-app-062,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.63
+mock-vm-app-063,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.64
+mock-vm-app-064,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.65
+mock-vm-app-065,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.66
+mock-vm-app-066,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.67
+mock-vm-app-067,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.68
+mock-vm-app-068,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.69
+mock-vm-app-069,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.70
+mock-vm-app-070,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.71
+mock-vm-app-071,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.72
+mock-vm-app-072,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.73
+mock-vm-app-073,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.74
+mock-vm-app-074,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.75
+mock-vm-app-075,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.76
+mock-vm-app-076,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.77
+mock-vm-app-077,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.78
+mock-vm-app-078,poweredOn,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.79
+mock-vm-app-079,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.80
+mock-vm-app-080,poweredOn,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.81
+mock-vm-app-081,poweredOn,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.82
+mock-vm-app-082,poweredOn,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.83
+mock-vm-app-083,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.84
+mock-vm-app-084,poweredOn,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.85
+mock-vm-app-085,poweredOn,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.86
+mock-vm-app-086,poweredOff,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.87
+mock-vm-app-087,poweredOff,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.88
+mock-vm-app-088,poweredOff,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.89
+mock-vm-app-089,poweredOff,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.90
+mock-vm-app-090,poweredOff,2,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.91
+mock-vm-app-091,poweredOff,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.92
+mock-vm-app-092,poweredOff,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.93
+mock-vm-app-093,poweredOff,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-06.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.94
+mock-vm-app-094,poweredOff,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-07.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.95
+mock-vm-app-095,poweredOff,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-08.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.96
+mock-vm-app-096,poweredOff,4,4096,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-01.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.97
+mock-vm-app-097,poweredOff,2,8192,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-02.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.98
+mock-vm-app-098,poweredOff,2,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-03.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.99
+mock-vm-app-099,poweredOff,2,8192,51200,25600,Microsoft Windows Server 2019 (64-bit),mock-esxi-04.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.100
+mock-vm-app-100,poweredOff,4,4096,51200,25600,Red Hat Enterprise Linux 8 (64-bit),mock-esxi-05.synthetic.local,Cluster-Production,Datacenter-Core,192.0.2.101

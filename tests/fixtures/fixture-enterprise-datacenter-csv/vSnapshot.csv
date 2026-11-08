@@ -1,0 +1,3 @@
+VM,Snapshot,Date / time snapshot,Size MiB
+mock-vm-app-007,pre-patch-backup,2026-09-15 10:00:00,25600
+mock-vm-app-022,pre-patch-backup,2026-09-15 10:00:00,25600

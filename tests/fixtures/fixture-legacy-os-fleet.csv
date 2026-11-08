@@ -1,0 +1,5 @@
+VM,Powerstate,CPUs,Memory,Provisioned MiB,In Use MiB,OS according to the VM spec,Host,Cluster,Datacenter,Primary IP Address
+mock-legacy-win2003,poweredOn,2,4096,30720,15360,Microsoft Windows Server 2003 (32-bit),mock-esxi-01.synthetic.local,Cluster-Legacy,DC-1,192.0.2.21
+mock-legacy-win2008r2,poweredOn,4,8192,61440,30720,Microsoft Windows Server 2008 R2 (64-bit),mock-esxi-01.synthetic.local,Cluster-Legacy,DC-1,192.0.2.22
+mock-legacy-centos5,poweredOn,2,2048,20480,10240,CentOS 5.11 (64-bit),mock-esxi-02.synthetic.local,Cluster-Legacy,DC-1,192.0.2.23
+mock-modern-rocky9,poweredOn,4,16384,51200,20480,Rocky Linux 9 (64-bit),mock-esxi-02.synthetic.local,Cluster-Legacy,DC-1,192.0.2.24
