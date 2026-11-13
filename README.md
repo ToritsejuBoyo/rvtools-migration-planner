@@ -2,10 +2,14 @@
 
 ![VMware RVTools Migration Planner Terminal Demo](assets/demo.gif)
 
-[![Automated Test Suite](https://img.shields.io/badge/tests-46%20passed-brightgreen.svg)](tests/validate-skill.py)
+[![tests](https://github.com/ToritsejuBoyo/rvtools-migration-planner/actions/workflows/tests.yml/badge.svg)](https://github.com/ToritsejuBoyo/rvtools-migration-planner/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)]()
+[![Dependencies](https://img.shields.io/badge/dependencies-zero%20(stdlib%20only)-brightgreen.svg)](CONTRIBUTING.md)
+[![Security](https://img.shields.io/badge/security-read--only%20%7C%20no%20egress-informational.svg)](SECURITY.md)
+[![Standard](https://img.shields.io/badge/standard-agentskills.io-blueviolet.svg)](https://agentskills.io)
+
 [![Python Version](https://img.shields.io/badge/python-3.8%2B%20(stdlib%20only)-blue.svg)](scripts/rvtools_planner.py)
-[![Compliance](https://img.shields.io/badge/compliance-read--only%20%7C%20zero--pii-success.svg)](references/hypervisor-migration-matrix.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 An enterprise virtualization assessment engine and hypervisor exit planner. Ingests native VMware vSphere RVTools multi-tab Excel workbooks (`.xlsx`) or exported CSV directories using standard library Python, pinpoints migration blockers (Raw Device Mappings, stale snapshots, multi-writer shared disks, legacy operating systems, monster VMs), formulates 5-wave phased migration schedules, and sizes destination Proxmox VE (Ceph/ZFS) or Microsoft Hyper-V clusters with deterministic $N+1$ and $N+2$ high availability resilience.
 
@@ -136,11 +140,22 @@ python tests/extreme_test_rvtools_planner.py
 python tests/advanced_edge_cases_test.py
 ```
 
-### Benchmark Results
-- **Standard Harness:** 20/20 passed in 0.24s.
-- **Scale Stress Test:** 5,000 enterprise VMs ingested, analyzed, and sized in 0.43s (11,537 VMs/sec throughput).
-- **Extreme Payloads:** 13/13 passed (corrupted XLSX, truncated XML, ReDoS resilience, negative hardware inputs).
-- **Architectural Edge Cases:** 8/8 passed (Ceph 3x storage math, Windows VirtIO warnings, Hyper-V core licensing, RDM blockers).
+### Test Coverage
+
+Pass/fail status for every suite is published by CI on each push, across Python
+3.9-3.13 on Linux, macOS, and Windows - see the `tests` badge at the top of this file
+for the current result rather than a number recorded here by hand.
+
+What the suites cover:
+- **Standard harness:** end-to-end assessment against the bundled RVTools fixtures.
+- **Scale stress:** 5,000-VM enterprise inventories ingested, analyzed, and sized, with
+  a throughput assertion to catch performance regressions.
+- **Extreme payloads:** corrupted XLSX, truncated XML, ReDoS resilience, and negative
+  hardware inputs.
+- **Architectural edge cases:** Ceph 3x storage math, Windows VirtIO warnings, Hyper-V
+  core licensing, and RDM blockers.
+- **Sanitization conformance:** the library-wide credential and PII redaction contract
+  (`tests/sanitizer_conformance_test.py`), identical in every skill.
 
 ---
 

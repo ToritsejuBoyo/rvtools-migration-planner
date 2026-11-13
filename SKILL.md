@@ -1,7 +1,18 @@
 ---
 name: rvtools-migration-planner
-description: >
-  Analyzes VMware vSphere RVTools multi-tab Excel workbooks (.xlsx) and CSV exports (vInfo, vDisk, vSnapshot, vNetwork, vHost) to produce comprehensive Proxmox VE or Microsoft Hyper-V migration assessments, blocker matrices, N+1 cluster capacity sizing, and phased wave cutover plans. Use this skill when a Virtualization Engineer, Infrastructure Architect, or VMware Administrator is planning a Broadcom VMware exit, auditing VM snapshots/RDMs/legacy OS blockers, calculating host CPU/RAM/Ceph/ZFS storage sizing, or scripting automated VM imports.
+description: >-
+  Analyzes VMware vSphere RVTools multi-tab Excel workbooks (.xlsx) and CSV exports (vInfo, vDisk,
+  vSnapshot, vNetwork, vHost) to produce comprehensive Proxmox VE or Microsoft Hyper-V migration
+  assessments, blocker matrices, N+1 cluster capacity sizing, and phased wave cutover plans. Use
+  this skill when a Virtualization Engineer, Infrastructure Architect, or VMware Administrator is
+  planning a Broadcom VMware exit, auditing VM snapshots/RDMs/legacy OS blockers, calculating host
+  CPU/RAM/Ceph/ZFS storage sizing, or scripting automated VM imports.
+license: MIT
+version: 1.0.0
+metadata:
+  standard: agentskills.io
+  dependencies: none (Python standard library only)
+  access: read-only collectors; no state is modified on target systems
 ---
 
 # VMware RVTools to Proxmox / Hyper-V Migration Planner (`rvtools-migration-planner`)
@@ -65,6 +76,21 @@ python scripts/rvtools_planner.py \
   --sanitize \
   --json-output ./rvtools-assessment.json
 ```
+
+### Mode A2: Legacy Per-Tab CSV Analyzer
+
+[`scripts/analyze_rvtools.py`](scripts/analyze_rvtools.py) is the original CSV-only
+predecessor of `rvtools_planner.py`. It takes each RVTools tab as a separate `--vinfo`
+/ `--vdisk` / `--vsnapshot` / `--vnetwork` file rather than a workbook or directory:
+
+```bash
+python scripts/analyze_rvtools.py   --vinfo ./tabvInfo.csv   --vdisk ./tabvDisk.csv   --vsnapshot ./tabvSnapshot.csv   --target proxmox
+```
+
+Prefer `rvtools_planner.py` (Mode A) for all new work — it is the canonical engine and
+is the only one that reads `.xlsx` directly, computes full wave partitioning, and
+applies sanitization. Use this legacy path only when you already have individual tab
+CSVs and want a fast blocker/sizing summary.
 
 ### Mode B: Direct Summary / Snippet Paste
 
@@ -154,10 +180,39 @@ $$\text{Recommended Cluster Nodes} = \text{Base Active Nodes} + 1 \quad (\text{o
 ## Bundled Tools & Resources
 
 - **Core Analysis Engine:** [`scripts/rvtools_planner.py`](scripts/rvtools_planner.py) — Native Python 3 CLI engine supporting streaming OpenXML `.xlsx` and `.csv` parsing, blocker identification, sanitization, and sizing calculations.
+- **Legacy CSV Analyzer:** [`scripts/analyze_rvtools.py`](scripts/analyze_rvtools.py) — Superseded per-tab CSV analyzer retained for backward compatibility (see Mode A2).
+- **Blockers & Sizing Reference:** [`references/rvtools-migration-blockers-and-sizing.md`](references/rvtools-migration-blockers-and-sizing.md) — Detailed blocker taxonomy (RDM, multi-writer, vTPM/EFI, legacy guest OS, monster VMs) with the underlying N+1 sizing formulas.
 - **Architectural Reference Matrix:** [`references/hypervisor-migration-matrix.md`](references/hypervisor-migration-matrix.md) — Comprehensive reference on Broadcom licensing changes, RDM migration alternatives, snapshot risks, Ceph/ZFS storage math, and Windows VirtIO injection runbooks.
 - **Migration Assessment Report Template:** [`assets/rvtools-migration-report-template.md`](assets/rvtools-migration-report-template.md) — Production-grade Markdown template for enterprise migration reports and executive deliverables.
+- **Phased Migration Plan Template:** [`assets/rvtools-migration-plan-template.md`](assets/rvtools-migration-plan-template.md) — Wave-by-wave cutover plan template with rollback gates and per-wave validation checklists.
 - **Automated Test Suites:**
   - Standard Test Harness: [`tests/validate-skill.py`](tests/validate-skill.py)
   - Scale Stress Test: [`tests/stress_test_rvtools_planner.py`](tests/stress_test_rvtools_planner.py)
   - Extreme Malformed Payload Test: [`tests/extreme_test_rvtools_planner.py`](tests/extreme_test_rvtools_planner.py)
   - Architectural Edge Cases Test: [`tests/advanced_edge_cases_test.py`](tests/advanced_edge_cases_test.py)
+
+---
+
+## Data Handling & Sanitization
+
+Sanitization runs **client-side, before any output is produced**, so credentials and
+personal data are removed on the operator's machine rather than being sent to a model
+or pasted into a ticket.
+
+Two layers apply:
+
+1. This skill's own domain-aware masking (hostnames, accounts, and the identifiers
+   specific to this domain).
+2. A shared residual pass, [`scripts/sanitizer.py`](scripts/sanitizer.py), vendored
+   identically across every skill in the library. It is the common floor: private keys,
+   cloud provider keys, JWTs and bearer tokens, connection-string passwords, assigned
+   secrets, emails, IPv4/IPv6 addresses, MAC addresses, GUIDs, SSNs, payment card
+   numbers, and phone numbers.
+
+The contract is enforced by `tests/sanitizer_conformance_test.py`, which runs the same
+adversarial corpus in every skill. Documentation placeholders (RFC 5737/3849 addresses,
+RFC 7042 MAC ranges, `example.com` names, and existing `[REDACTED-*]` tokens) are
+preserved, so the pass is safe to apply more than once.
+
+Sanitization is thorough and tested, but it is not a substitute for reading output
+before sharing it outside your organization.
